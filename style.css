@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fff;
+   
+}
+
+.first-navbar{
+    width: 100%;
+    height: 10vh;
+    border: 1px solid #000;
+    background-color: #000;
+}
+.navbar{
+    height: 25vh;
+    width: 94%;
+    margin: 10px auto;
+    background-color: gray;
+}
+.container2{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: 30px;
+    margin-right: 30px;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+}
+
+.rond{
+    width: 7px;
+    height: 7px;
+    border-radius:50% ;
+    margin-right: 5px;
+    padding: 10px;
+    background-color: #fff;
+    
+}
+.rond1{
+    width: 90px;
+    height: 90px;
+    border-radius:50%;
+    background-color:yellow;
+    border-right: none;
+    margin-right: 12px;
+    animation: courseboule 0.6s infinite;
+
+}
+.rond1::after{
+    width: 90px;
+    height: 90px;
+    content: '';
+    display: block;
+    /* clip-path */
+    clip-path: polygon(34% 59%, 100% 23%, 100% 88%);
+    background-color: gray;
+    animation: course 0.6s infinite;
+}
+@keyframes course {
+    0%{
+        clip-path: polygon(34% 59%, 100% 54%, 100% 59%);
+        background-color: gray;
+
+    }
+    30%{
+        clip-path: polygon(34% 59%, 100% 23%, 100% 88%);
+        background-color: gray;
+        
+
+    }
+    100%{
+        clip-path: polygon(34% 59%, 100% 54%, 100% 59%);
+        background-color: gray;
+        
+
+    }
+   }
+
