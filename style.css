@@ -58,11 +58,12 @@ body{
     /* clip-path */
     clip-path: polygon(34% 59%, 100% 23%, 100% 88%);
     background-color: gray;
-    animation: course 2s infinite;
+    animation: course 1s infinite;
 }
 
 .rond2{
     clip-path: ellipse(36% 50% at 51% 78%);
+    /* clip-path: ellipse(25% 40% at 48% 96%); */
     background-color: blue;
     width: 100px;
     padding: 70px;
@@ -70,27 +71,268 @@ body{
     position: relative;
     margin-bottom: 50px;
     margin-left: 100px;
-    animation: courseboule 3s  infinite;
-    
-
+    /* animation: courseboule 3s  infinite; */
+    animation-name: courseboule,colori;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 .yeux1{
     position: absolute;
     background-color: #fff;
+    right: 28px;
     width: 40px;
     height: 40px;
     border-radius: 47%;
-    clip-path: ellipse(25% 40% at 50% 50%);
+    /* clip-path: ellipse(25% 40% at 50% 50%); */
 }
 .yeux2{
     position: absolute;
-    left: 18px;
+    left: 28px;
     background-color: #fff;
     width: 40px;
     height: 40px;
     border-radius: 47%;
-    clip-path: ellipse(25% 40% at 50% 50%);
+    /* clip-path: ellipse(25% 40% at 50% 50%); */
 }
+.noir1{
+    position: absolute;
+    background-color:blue;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 10px ;
+    animation: demon 1s infinite linear;
+
+    top: 12px;
+}
+.noir2{
+    position: absolute;
+    background-color: red;
+    width: 10px;
+    margin-left: 10px ;
+    animation: demon 1s infinite linear;
+
+    height: 10px;
+    border-radius: 50%;
+    /* clip-path: ellipse(25% 40% at 50% 50%); */
+    top: 12px;
+
+}
+.container1{
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    box-shadow:10px yellow;
+}
+.container1>:nth-child(1){
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid yellow;
+    margin: 12px;
+    background-color: yellow;
+    box-shadow:2px 2px 2px rgb(182, 182, 16);
+    position: relative;
+
+}
+.container1>:nth-child(2){
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid yellow;
+    margin: 12px;
+    background-color: yellow;
+    box-shadow:2px 2px 2px rgb(182, 182, 16);
+
+    position: relative;
+
+
+}
+.container1>:nth-child(3){
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid yellow;
+    background-color: yellow;
+    box-shadow:2px 2px 2px rgb(182, 182, 16);
+    position: relative;
+}
+
+.eye1{
+    left: 30px;
+    top: 47px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    margin-right: 10px;
+    animation: tourner 1s linear infinite;
+
+}
+
+.eye2{
+    right: 30px;
+    top: 47px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    margin-left: 10px;
+    animation: tourner 1s linear infinite;
+}
+.point1{
+    left: 10px;
+    top: 7px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 20px;
+    background-color:#000;
+
+
+
+
+}
+
+.point2{
+    right: 10px;
+    top: 7px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:#000;
+    position: absolute;
+
+
+}
+.emoji1{
+    position: relative;
+}
+
+.bouche{
+    top: 140px;
+    left: 70px;
+    width: 50px;
+    height: 10px;
+    border-radius: 20%;
+    background-color:rgba(128, 0, 0, 0.514);
+    position: absolute;
+}
+
+.eyeemoji2{
+    right: 30px;
+    top: 47px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    margin-left: 10px;
+}
+
+
+.eye3{
+    right: 17px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:#000;
+    position: absolute;
+}
+
+.eye4{
+    top: 70px;
+    left: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    border: 13px solid rgba(128, 0, 0, 0.514);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    /* background-color:rgba(128, 0, 0, 0.514); */
+    position: absolute;
+}
+
+
+.beute1{
+    left: 37px;
+    top: 60px;
+    width: 20px;
+    height: 30px;
+    border-radius:50%;
+    background-color:rgba(128, 0, 0, 0.514);
+    position: absolute;
+}
+.beute2{
+    right: 37px;
+    top: 60px;
+    width: 20px;
+    height: 30px;
+    border-radius:50%;
+    background-color:rgba(128, 0, 0, 0.514);
+    position: absolute;
+}
+.bouche3{
+    top: 110px;
+    left: 60px;
+    width: 90px;
+    height: 60px;
+    border-radius:50%;
+    border: 8px solid rgba(128, 0, 0, 0.514);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    /* background-color:rgba(128, 0, 0, 0.514); */
+    position: absolute;
+}
+
+.bouchebis{
+    top: 110px;
+    left: 50px;
+    width: 100px;
+    height: 60px;
+    border-radius:50%;
+    border: 29px solid rgba(128, 0, 0, 0.514);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    /* background-color:rgba(128, 0, 0, 0.514); */
+    position: relative;
+}
+.langue{
+    width: 60px;
+    height: 30px;
+    border-radius:50%;
+    border: 29px solid rgb(199, 54, 54);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    top: -1px;
+    padding: 30px;
+    left: 20px;
+    position: relative;
+}
+
+.trait{
+    width: 1px;
+    height: 21px;
+    border: 1px solid rgba(105, 101, 101, 0.7);
+    background-color: #0000007c;
+    position: absolute;
+    top: 59px;
+}
+
+
+
+
+
 
 
 
@@ -155,3 +397,65 @@ body{
     }
 }
 
+@keyframes colori {
+    0%{
+        background-color: blue
+    }
+
+    10%{
+        background-color: red
+
+        
+
+    }
+    20%{
+        background-color: blue
+
+    }
+    30%{
+        background-color: red
+       
+        
+
+    }
+    40%{
+        background-color: blue
+    }
+    50%{
+        background-color:red
+    }
+    60%{
+        background-color:blue
+    }
+    70%{
+        background-color:red 
+    }
+    80%{
+        background-color: blue
+    }
+    90%{
+        background-color: blue
+    }
+    100%{
+        background-color: red;
+    } 
+    
+}
+@keyframes tourner{
+    to{
+        rotate: 1turn;
+    }
+   
+}
+@keyframes demon{
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(20px);
+    }
+    100%{
+        transform: translate(0);
+    }
+   
+}
